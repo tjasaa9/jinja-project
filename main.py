@@ -17,4 +17,5 @@ def index():
 def about():
     return render_template("about.html")
 
-app.run(port="4456", use_reloader=True)
+if __name__ == '__main__':
+    app.run(use_reloader=True)
