@@ -2,8 +2,16 @@
 
 {% block title %}About me{% endblock title %}
 
+
 {% block content %}
+
+
     <p>More about me :)</p>
+
+    {% if name %}
+    <p>Hello{{name}}!</p>
+    {% endif %}
+    
     <form method="post" action="/about-me">
         <input type="text" name="contact-name" placeholder="Enter your name">
         <br>
