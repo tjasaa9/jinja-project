@@ -4,4 +4,17 @@
 
 {% block content %}
     <p>More about me :)</p>
+    <form method="post" action="/about-me">
+        <input type="text" name="contact-name" placeholder="Enter your name">
+        <br>
+    
+        <input type="email" name="contact-email" placeholder="Enter email address">
+        <br>
+
+        <textarea name="contact-message" id="Enter your message" cols="30" rows="10"></textarea>
+        <br>
+
+        <button type="submit">Submit</button>
+    
+    </form>
 {% endblock content %}
